@@ -12,7 +12,7 @@ currency = "euros"
 
 model = "gpt-4o"
 client = OpenAI(
-    api_key="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"
+    api_key=os.getenv("OPENAI_API_KEY")
 )
 
 def normalize(text):
